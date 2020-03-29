@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/ad_template.dwt" codeOutsideHTMLIsLocked="false" -->
+<!-- EPA Template, OneEPA Web, 17 November 2010 >
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>AQS API | AirData | US EPA</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="metaElements" -->
+<meta name="DC.title" content="AirData website File Download page" />
+<meta name="DC.description" content="Large data files available on the AirData website" />
+<meta name="keywords" content="download, air, monitoring, data, file, air quality, monitor, statistics, AQS" />
+<!-- InstanceEndEditable -->
+<meta name="DC.type" content="Data & Tools" />
+<meta name="DC.Subject.epachannel" content="Science & Technology" />
+<meta name="DC.Subject.epabrm" content="" />
+<meta name="DC.Subject.epacat" content="" />
+<meta name="DC.Subject.epaect" content="" />
+<meta name="DC.Subject.epaemt" content="" />
+<meta name="DC.Subject.epahealth" content="" />
+<meta name="DC.Subject.epaindustry" content="" />
+<meta name="DC.Subject.epaopt" content="" />
+<meta name="DC.Subject.epappt" content="" />
+<meta name="DC.Subject.eparat" content="" />
+<meta name="DC.Subject.eparegulation" content="" />
+<meta name="DC.Subject.eparit" content="" />
+<meta name="DC.Subject.epasubstance" content="" />
+<meta name="DC.audience" content="" />
+<meta name="DC.coverage" content="" />
+<meta name="DC.date.created" content="" />
+<meta name="DC.date.modified" content="" />
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if lt IE 7]><html class="lt-ie9 lt-ie8 lt-ie7 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9 no-js" lang="en" dir="ltr"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)]><!--> <li class="no-js not-oldie" lang="en" dir="ltr"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="true" />
+  <link rel="shortcut icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/vnd.microsoft.icon" />
+  <meta name="MobileOptimized" content="width" />
+  <meta http-equiv="cleartype" content="on" />
+  <meta http-equiv="ImageToolbar" content="false" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="version" content="20161218" />
+<!--googleon: all-->
+  <meta name="DC.description" content="" />
+  <meta name="DC.title" content="" />
+  <title>AQS API | AirData | US EPA</title>
+<!--googleoff: snippet-->
+  <meta name="keywords" content="" />
+  <link rel="shortlink" href="" />
+  <link rel="canonical" href="" />
+  <meta name="DC.creator" content="" />
+  <meta name="DC.language" content="en" />
+  <meta name="DC.Subject.epachannel" content="" />
+  <meta name="DC.type" content="" />
+  <meta name="DC.date.created" content="" />
+  <meta name="DC.date.modified" content="" />
+<!--googleoff: all-->
+  <link type="text/css" rel="stylesheet" href="https://www.epa.gov/sites/all/libraries/template2/s.css" media="all" />
+  <!--[if lt IE 9]><link type="text/css" rel="stylesheet" href="https://www.epa.gov/sites/all/themes/epa/css/ie.css" media="all" /><![endif]-->
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov All Press Releases" href="https://www.epa.gov/newsreleases/search/rss" />
+  <link rel="alternate" type="application/atom+xml" title="EPA.gov Headquarters Press Releases" href="https://www.epa.gov/newsreleases/search/rss/field_press_office/headquarters" />
+  <link rel="alternate" type="application/atom+xml" title="Greenversations, EPA's Blog" href="https://blog.epa.gov/blog/feed/" />
+  <!--[if lt IE 9]><script src="https://www.epa.gov/sites/all/themes/epa/js/html5.js"></script><![endif]-->
+</head>
+<!-- NOTE, figure out body classes! -->
+<body class="node-type-(web-area|page|document|webform) (microsite|resource-directory)" >
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-L8ZB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-L8ZB');</script>
+  <!-- End Google Tag Manager -->
+  <div class="skip-links"><a href="#main-content" class="skip-link element-invisible element-focusable">Jump to main content</a></div>
+  <header class="masthead clearfix" role="banner">
+    <img class="site-logo" src="https://www.epa.gov/sites/all/themes/epa/logo.png" alt="" />
+    <hgroup class="site-name-and-slogan">
+      <h1 class="site-name"><a href="https://www.epa.gov/" title="Go to the home page" rel="home"><span>US EPA</span></a></h1>
+      <div class="site-slogan">United States Environmental Protection Agency</div>
+    </hgroup>
+    <form class="epa-search" method="get" action="https://search.epa.gov/epasearch/epasearch">
+      <label class="element-hidden" for="search-box">Search</label>
+      <input class="form-text" placeholder="Search EPA.gov" name="querytext" id="search-box" value=""/>
+      <button class="epa-search-button" id="search-button" type="submit" title="Search">Search</button>
+      <input type="hidden" name="areaname" value="" />
+      <input type="hidden" name="areacontacts" value="" />
+      <input type="hidden" name="areasearchurl" value="" />
+      <input type="hidden" name="typeofsearch" value="epa" />
+      <input type="hidden" name="result_template" value="2col.ftl" />
+    </form>
+  </header>
+  <section id="main-content" class="main-content clearfix" role="main">
+    <div class="region-preface clearfix">
+      <div id="block-pane-epa-web-area-connect" class="block block-pane contextual-links-region">
+        <ul class="menu utility-menu">
+		  <li class="menu-item"><a href="mailto:aqsdatamart@epa.gov">Contact Us</a></li>
+          <!--<li class="menu-item"><a href="http://www.epa.gov/airquality/airdata/ad_contact.html" class="menu-link contact-us">Contact Us</a></li>-->
+        </ul>
+      </div>
+    </div>
+    <div class="main-column clearfix">
+<!--googleon: all-->
+
+
+      Return to <a href="https://www.epa.gov/outdoor-air-quality-data">Air Data Home</a>
+
+      <h1 class="page-title" ID="main-content">Air Quality System (AQS) API</h1>
+      <div class="panel-pane pane-node-content" >
+        <div class="pane-content">
+          <div class="node node-page clearfix view-mode-full">
+
+
+
+      <!-- C O N T E N T    B L O C K    B E G I N  -->
+
+	<p>Welcome to the AQS API (version 2).</p>
+	  	  
+	<p>This API is the primary place to obtain row-level data from the EPA's Air Quality System (AQS) database.  If you would
+	     like aggregated or visual data from AQS, or large files of pre-extracted data,  
+		 <a href="https://www.epa.gov/outdoor-air-quality-data">AirData</a>
+		 is the place to start.</p>
+		 
+	<p>AQS contains ambient air sample data collected by state, local, tribal, and federal air pollution control 
+	     agencies from thousands of monitors around the nation.  It also contains meteorological data, descriptive 
+		 information about each monitoring station (including its geographic location and its operator), and 
+		 information about the quality of the samples.  
+		 <a href="https://aqs.epa.gov/aqsweb/documents/about_aqs_data.html">More about AQS.</a>
+         Note, AQS does not contain real-time air quality data (it can take 6 months or more from
+         the time data is collected until it is in AQS).  For real-time data, please visit the 
+         <a href="https://docs.airnowapi.org/">AirNow API</a> </p>
+		 
+	<p>Data from this API is available to anyone but is targeted at application developers and data analysts who
+         are familiar with the data and its interpretation.  You must <a href="#signup">sign up</a> to obtain a key to use the API.</p>	  
+		 
+	<p>The remainder of this page contains a description of the services, how to construct them, and examples. 
+	     We also have <a href="https://aqs.epa.gov/aqsweb/documents/aqs_api_specification.json">OpenAPI specifications (json)</a>
+		 available.
+		 </p>
+	<p> Please <a href="mailto:aqsdatamart@epa.gov">email us</a> with any suggested changes to the API or documentation.</p>
+
+		 
+	<strong>On this page</strong><br>
+	<ul>
+		<li><a href="#services">Services Overview</a></li>
+		<li><a href="#variables">Variables used in service requests</a></li>
+        <li><a href="#details">Service construction details and examples</a></li>
+        <ul>
+            <li><a href="#signup">Sign Up</a></li>
+            <li><a href="#meta">Metadata</a></li>
+            <li><a href="#lists">Lists</a></li>
+            <li><a href="#monitors">Monitors</a></li>
+            <li><a href="#sample">Air Quality Samples</a></li>
+            <li><a href="#daily">Daily Summary Data</a></li>
+            <li><a href="#annual">Annual Summary Data</a></li>
+            <li><a href="#blanks">Quality Assurance - Blanks</a></li>
+            <li><a href="#collocated">Quality Assurance - Collocated Assessments</a></li>
+            <li><a href="#frv">Quality Assurance - Flow Rate Verifications</a></li>
+            <li><a href="#fra">Quality Assurance - Flow Rate Audits</a></li>
+            <li><a href="#onepointqc">Quality Assurance - One Point Quality Control Checks</a></li>
+            <li><a href="#pep">Quality Assurance - PEP Audits</a></li>
+        </ul>
+		<!--<li><a href="#registration">Registration</a></li>-->
+		<li><a href="#format">Output format - JSON</a></li>
+		<li><a href="#spreadsheet">Loading JSON data into Excel</a></li>
+		<li><a href="#errors">Error handling and status codes</a></li>
+		<!--<li><a href="https://aqs.epa.gov/aqsweb/documents/about_aqs.html">Interpreting the data</a> (links to separate page)</li>-->
+		<li><a href="https://aqs.epa.gov/aqsweb/documents/about_aqs_data.html">Interpreting the data</a> (links to a separate page)</li>
+		<li><a href="#terms">User Limits and Terms of Service</a></li>
+		<li><a href="#tips">Usage tips</a></li>
+		<li><a href="#v1">What has changed from the API version 1</a></li>
+		<li><a href="#changes">Change log and planned enhancements</a></li>
+	</ul>
+	<br>
+
+    <hr>
+    <h3 ID="services">Services Overview</h3>
+
+
+
+	  <p>This table lists the services available and the type of data each one provides.
+		  Each is linked to detailed construction rules and examples.
+	  </p>
+	  
+				<table class="webservices" summary="List of web services along with descriptions.">
+					<thead>
+						<tr>
+							<th>Service</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+					    <tr>
+							<td><a href="#signup">Sign up</a></td>
+							<td>Creates an account or resets a password.  Requires validation of registered email address.  Email will
+							    be sent to the registered address from aqsdatamart@epa.gov.  This service can also be
+								used to reset passwords.</td>
+						</tr>
+						<tr>
+							<td><a href="#meta">Meta Data</a></td>
+							<td>Returns information about the API.  Is it available/up?  What are the meanings of the fields in my returned data?
+								Recent and planned changes, etc. </td>
+						</tr>
+						<tr>
+							<td><a href="#lists">List</a></td>
+							<td>Provides information you need to construct other queries.  Valid values for the required
+							    variables: parameter code, state code, etc.  (See below.)</td>
+						</tr>
+						<tr>
+							<td><a href="#monitors">Monitors</a></td>
+							<td>Returns operational information about the samplers (monitors) used to collect the data.  Includes identifying information,
+								operational dates, operating organizations, etc.</td>
+						</tr>
+						<tr>
+							<td><a href="#sample">Sample Data</a></td>
+							<td>Returns sample data - the finest grain data reported to EPA.  Usually hourly, sometimes 5-minute, 12-hour, etc.
+							    This service is available in several geographic selections based on geography: site, county, state, 
+								CBSA (core based statistical area, a grouping of counties), or latitude/longitude bounding box.</td>
+						</tr>
+						<tr>
+							<td><a href="#daily">Daily Summary</a></td>
+							<td>Returns data summarized at the daily level.  All daily summaries are calculated on midnight to midnight basis in
+								<em>local time</em>.  Variables returned include date, mean value, maximum value, etc.</td>
+						</tr>
+						<tr>
+							<td><a href="#annual">Annual Summary</a></td>
+							<td>Returns data summarized at the yearly level.  Variables include mean value, maxima, percentiles, etc.</td>
+						</tr>
+						<tr>
+							<td><a href="#blanks">QA Blanks</a></td>
+							<td>Quality assurance data - blanks samples.  Blanks are unexposed sample collection devices (e.g., filters) that
+								are transported with the exposed sample devices to assess if contamination is occurring during the transport
+								or handling of the samples.</td>
+						</tr>
+						<tr>
+							<td><a href="#collocated">QA Collocated Assessments</a></td>
+							<td>Quality assurance data - collocated assessments.  Collocated assessments are pairs of samples collected by
+								different samplers at the same time and place.  (These are "operational" samplers, assessments with independently
+								calibrated samplers are called "audits".)</td>
+						</tr>
+						<tr>
+							<td><a href="#frv">QA Flow Rate Verifications</a></td>
+							<td>Quality assurance data - flow rate verifications.  Several times per year, each PM monitor must have it's (fixed)
+								flow rate verified by an operator taking a measurement of the flow rate.</td>
+						</tr>
+						<tr>
+							<td><a href="#fra">QA Flow Rate Audits</a></td>
+							<td>Quality assurance data - flow rate audits.  At least twice year, each PM monitor must have its flow
+								rate measurement audited by an expert using a different method than is used for flow rate verifications.</td>
+						</tr>
+						<tr>
+							<td><a href="#onepointqc">QA One Point QC Raw Data</a></td>
+							<td>Quality assurance data - one point quality control check raw data.  At least every two weeks, certain gaseous
+								monitors must be challenged with a known concentration to determine monitor performance.</td>
+						</tr>
+						<tr>
+							<td><a href="#pep">QA PEP Audits</a></td>
+							<td>Quality assurance data - performance evaluation program (PEP) audits.  PEP audits are independent 
+								assessments used to estimate total measurement system bias with a primary quality assurance organization.</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+
+				<p class="pagetop"><a href="#main-content">Top of Page</a></p>
+				
+	  <hr>
+	  <h3 ID="variables">Variables used in service requests</h3>
+	  
+	  <p>These are the variables you will use to construct your request.  See the details below about which variables are
+	     required and which are optional for each request type.</p>
+	  
+				<table class="variables" summary="List of variables used by the web services along with descriptions.">
+					<thead>
+						<tr>
+							<th>Variable</th>
+							<th>Description</th>
+							<th>Example</th>
+						</tr>
+					</thead>
+					<tbody>
+					    <tr>
+							<td id="email">email</td>
+							<td>The email address of the requester.</td>
+							<td>someone@provider.com</td>
+						</tr>
+						<tr>
+							<td id="key">key</td>
+							<td>The key matching the email address for the requester.  This is provided at registration.  (This is not referred
+							    to as a password since it is not used for authentication, but only account monitoring.)</td>
+							<td>notarealkey</td>
+						</tr>
+						<tr>
+							<td id="bdate">bdate</td>
+							<td>The begin date of the data selection in YYYYMMDD format.  Only data on or after this date will be returned.  (Note, for annual data, only the year portion of the bdate and edate are used and only whole years of data are returned.  For example, bdate = 20171231 and edate = 20180101 will return full data for 2017 and 2018.)</td>
+							<td>20170101</td>
+						</tr>
+						<tr>
+							<td id="edate">edate</td>
+							<td>The end date of the data selection in YYYYMMDD format.  Only data on or before this date will be returned.  <strong>The end date must be in the same year as the begin date.</strong>  This rule does not apply to the Monitors service. (Note, for annual data, only the year portion of the bdate and edate are used and only whole years of data are returned.  For example, bdate = 20170531 and edate = 20170630 will return full data for 2017.)</td>
+							<td>20171231</td>
+						</tr>
+						<tr>
+							<td id="param">param</td>
+							<td>The AQS parameter code for the data selection.  AQS uses proprietary 5 digit codes.  They may be obtained via the 
+							    list parameters service.  Up to 5 parameters may be requested, separated by commas.  Only data for these parameters will be returned.</td>
+							<td>81101,44201</td>
+						</tr>
+						<tr>
+							<td id="state">state</td>
+							<td>The 2 digit state FIPS code for the state (with leading zero).  They may be obtained via the 
+							    list states service. Only data from within this state will be returned.</td>
+							<td>01</td>
+						</tr>
+						<tr>
+							<td id="county">county</td>
+							<td>The 3 digit state FIPS code for the county within the state (with leading zeroes).  They may be obtained via the 
+							    list counties service. Only data from within this county will be returned.</td>
+							<td>089</td>
+						</tr>
+						<tr>
+							<td id="site">site</td>
+							<td>The 4 digit AQS site number within the county (with leading zeroes).  They may be obtained via the 
+							    list sites service. Only data from this site will be returned.</td>
+							<td>0014</td>
+						</tr>
+						<tr>
+							<td id="cbsa">cbsa</td>
+							<td>The 5 digit AQS Core Based Statistical Area code (as defined by the census bureau, with leading zeroes).
+							    They may be obtained via the list cbsas service. Only data from this area will be returned.</td>
+							<td>16740</td>
+						</tr>
+						<tr>
+							<td id="minlat">minlat</td>
+							<td>The minimum latitude of a geographic box.  Decimal latitude with north being positive.
+							    Only data north of this latitude will be returned.</td>
+							<td>36.42348</td>
+						</tr>
+						<tr>
+							<td id="maxlat">maxlat</td>
+							<td>The maximum latitude of a geographic box.  Decimal latitude with north being positive.
+							    Only data south of this latitude will be returned.</td>
+							<td>36.8</td>
+						</tr>
+						<tr>
+							<td id="minlon">minlon</td>
+							<td>The minimum longitude of a geographic box.  Decimal longitude with east being positive.
+							    Only data east of this longitude will be returned.</td>
+							<td>-85.4</td>
+						</tr>
+						<tr>
+							<td id="maxlon">maxlon</td>
+							<td>The maximum longitude of a geographic box.  Decimal longitude with east being positive.
+							    Only data west of this longitude will be returned.  Note that -80 is less than -70.</td>
+							<td>-85.1</td>
+						</tr>
+						<tr>
+							<td id="cbdate">cbdate</td>
+							<td>Each value in our database has a "date of last change" that indicates when it was last updated.  The cbdate is used to
+                                filter data based on the change date, cbdate = change begin date in YYYYMMDD format.  Only data that changed on 
+								or after this date will be returned.</td>
+							<td>20180101</td>
+						</tr>
+						<tr>
+							<td id="cedate">cedate</td>
+							<td>Each value in our database has a "date of last change" that indicates when it was last updated.  The cedate is used to
+                                filter data based on the change date, cedate = change end date in YYYYMMDD format.  Only data that changed on 
+								or before this date will be returned.</td>
+							<td>20180101</td>
+						</tr>
+						<tr>
+							<td id="pqao">pqao</td>
+							<td>The 4 digit AQS Primary Quality Assurance Organization code (with leading zeroes).  They may be obtained via the 
+							    list pqaos service. Only data for this PQAO will be returned.  Only used in QA Data services.</td>
+							<td>0001</td>
+						</tr>
+						<tr>
+							<td id="ma">ma</td>
+							<td>The 4 digit AQS Monitoring Agency code (with leading zeroes).  They may be obtained via the 
+							    list mas service. Only data for this Monitoring Agency will be returned.  Only used in QA Data services.</td>
+							<td>1189</td>
+						</tr>
+						<tr>
+							<td id="class">pc</td>
+							<td>The AQS parameter class name.  Classes are a way to group like parameters.  They may be obtained via the 
+							    list classes service. Only used in the list parameters service.</td>
+							<td>criteria</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>				
+				<p class="pagetop"><a href="#main-content">Top of Page</a></p>
+				
+	<hr>
+	<h2 ID="details">Service Details and Examples</h2>
+	
+		<p>This section describes each service, required and optional variables, and gives some usage examples. </p>
+		
+		<p>Please note, for the examples we use a test account that has a limited number of uses per day.
+			If that limit is exceeded, you will get an error message rather than data.
+			Please register for your own account if you want to use the services.</p>
+			
+		<p>The required and optional variables may be submitted in any order.</p>
+		
+		
+
+		<h3 ID="signup">Sign Up</h3>
+		<p>This service creates an account or resets a password.  Requires validation of registered email address.  Email will
+				be sent to the registered address from aqsdatamart@epa.gov.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2" id="signup">Sign up</td>
+						<td rowspan="2"></td>
+						<td>signup</td>
+						<td><a href="#email">email</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="3">Examples:
+							<div>Use this service to register as a user.  A verification email will be sent to the email account specified.  To
+								register using the email address "myemail@example.com" create and request this link (<strong>Replace 
+								"myemail@example.com" in the example with your email address.</strong>):</div><br>
+							<div>
+								https://aqs.epa.gov/data/api/signup?email=myemail@example.com
+							</div><br>
+							<div>To reset a key: If the request is made with an email that is already registered, a new key
+							will be issued for that account and emailed to the listed address. Usage is the same as above.</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+			<h3 ID="meta">Meta Data</h3>
+			<p>Returns information about the API.  Note, is it not necessary to check the API
+				availibility before each service request (the system does this internally and 
+				will return an error message if there is a problem).  The intent of this 
+				service is to let you know the system is up before you start a long job.
+			</p>  
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="8">MetaData</td>
+						<td rowspan="2">Is the API available for use?</td>
+						<td>metaData/isAvailable</td>
+						<td></td>
+						<td><a href="#email">email</a>, <a href="#key">key</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">Example:
+							<div>To check if the API is up and running:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/metaData/isAvailable">
+								https://aqs.epa.gov/data/api/metaData/isAvailable</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Revision History</td>
+						<td>metaData/fieldsByService</td>
+						<td><a href="#email">email</a>, <a href="#key">key</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="3">Examples:
+							<div>Returns a complete list of revisions to the API in reverse chronological order:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/metaData/revisionHistory?email=test@aqs.api&key=test">
+									https://aqs.epa.gov/data/api/metaData/revisionHistory?email=test@aqs.api&key=test</a>
+							</div>
+
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Returned Fields by Service</td>
+						<td>metaData/fieldsByService</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#service">service</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="3">Examples:
+							<div>Returns a list and definitions of fields in the Sample Data service:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/metaData/fieldsByService?email=test@aqs.api&key=test&service=sampleData">https://aqs.epa.gov/data/api/metaData/fieldsByService?email=test@aqs.api&key=test&service=sampleData</a>
+							</div>
+							<div>Returns a list and definitions of fields in the List service:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/metaData/fieldsByService?email=test@aqs.api&key=test&service=list">
+								https://aqs.epa.gov/data/api/metaData/fieldsByService?email=test@aqs.api&key=test&service=list</a>
+							</div>
+							<div></div>
+						</td>
+					</tr>
+					<tr>
+						<td rowspan="2">Known Issues</td>
+						<td>metaData/issues</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td colspan="3">Examples:
+							<div>Returns a list of any known issues with system functionality or the data.
+								These are usually issues that have been identified internally and
+								will require some time to correct in our system or database.
+							</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/metaData/issues?email=test@aqs.api&key=test">
+									https://aqs.epa.gov/data/api/metaData/issues?email=test@aqs.api&key=test</a>
+							</div>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>				
+
+
+
+
+		<h3 ID="lists">Lists</h3>
+		<p>This service provides the variable values you many need to create other service requests.
+			All outputs are a value or code and the definition of that value.
+		</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="16">List</td>
+						<td rowspan="2">States</td>
+						<td>list/states</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Returns a list of the states and their FIPS codes used for constructing other requests:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/states?email=test@aqs.api&key=test">
+								https://aqs.epa.gov/data/api/list/states?email=test@aqs.api&key=test</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">Counties by State</td>
+						<td>list/countiesByState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#state">state</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all counties in North Carolina:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/countiesByState?email=test@aqs.api&key=test&state=37">
+								https://aqs.epa.gov/data/api/list/countiesByState?email=test@aqs.api&key=test&state=37</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">Sites by County</td>
+						<td>list/sitesByCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all sites in Wake County, NC:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/sitesByCounty?email=test@aqs.api&key=test&state=37&county=183">
+								https://aqs.epa.gov/data/api/list/sitesByCounty?email=test@aqs.api&key=test&state=37&county=183</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">CBSAs (Core Based Statistical Areas)</td>
+						<td>list/cbsas</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/cbsas?email=test@aqs.api&key=test">
+								https://aqs.epa.gov/data/api/list/cbsas?email=test@aqs.api&key=test</a>
+							</div>
+						</td>
+					</tr>
+					<tr>	
+						<td rowspan="2">Parameter Classes (groups of parameters, like criteria or all)</td>
+						<td>list/classes</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/classes?email=test@aqs.api&key=test">
+								https://aqs.epa.gov/data/api/list/classes?email=test@aqs.api&key=test</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">Parameters in a class (obtain the list of classes from the List - Parameter Classes service)</td>
+						<td>list/parametersByClass</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#class">pc</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all parameters in the CRITERIA class:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/parametersByClass?email=test@aqs.api&key=test&pc=CRITERIA">
+								https://aqs.epa.gov/data/api/list/parametersByClass?email=test@aqs.api&key=test&pc=CRITERIA</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">PQAOs (primary quality assurance organizations)</td>
+						<td>list/pqaos</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/pqaos?email=test@aqs.api&key=test">
+								https://aqs.epa.gov/data/api/list/pqaos?email=test@aqs.api&key=test</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">MAs (monitoring agencies)</td>
+						<td>list/mas</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>
+								<a href="https://aqs.epa.gov/data/api/list/mas?email=test@aqs.api&key=test">
+								https://aqs.epa.gov/data/api/list/mas?email=test@aqs.api&key=test</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	
+
+
+
+		<h3 ID="monitors">Monitors</h3>
+			<p>Returns operational information about the samplers (monitors) used to collect the 
+			data. Includes identifying information, operational dates, operating organizations, 
+			etc.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Monitors</td>
+						<td rowspan="2">By Site</td>
+						<td>monitors/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>,
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns list of SO2 monitors at the Hawaii Volcanoes NP site (#0007) in Hawaii County, HI that were operating on May 01, 2015. (Note, all monitors that operated between the bdate and edate will be returned):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/monitors/bySite?email=test@aqs.api&key=test&param=42401&bdate=20150501&edate=20150502&state=15&county=001&site=0007">
+								https://aqs.epa.gov/data/api/monitors/bySite?email=test@aqs.api&key=test&amp;param=42401&bdate=20150501&edate=20150502&state=15&county=001&site=0007</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>monitors/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>,
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all SO2 monitors in Hawaii County, HI that were operating on May 01, 2015: </div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/monitors/byCounty?email=test@aqs.api&key=test&param=42401&bdate=20150501&edate=20150502&state=15&county=001">
+								https://aqs.epa.gov/data/api/monitors/byCounty?email=test@aqs.api&key=test&amp;param=42401&bdate=20150501&edate=20150502&state=15&county=001</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>monitors/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>,
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns SO2 monitors in Hawaii that were operating on May 01, 2015:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/monitors/byState?email=test@aqs.api&key=test&param=42401&bdate=20150501&edate=20150502&state=15">
+								https://aqs.epa.gov/data/api/monitors/byState?email=test@aqs.api&key=test&amp;param=42401&bdate=20150501&edate=20150502&state=15</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Box</td>
+						<td>monitors/byBox</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#minlat">minlat</a>,
+							<a href="#maxlat">maxlat</a>,
+							<a href="#minlon">minlon</a>,
+							<a href="#maxlon">maxlon</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all ozone monitors in the vicinity of central Alabama that operated in 1995:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/monitors/byBox?email=test@aqs.api&key=test&param=44201&bdate=19950101&edate=19951231&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7">
+								https://aqs.epa.gov/data/api/monitors/byBox?email=test@aqs.api&key=test&amp;param=44201&bdate=19950101&edate=19951231&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By CBSA</td>
+						<td>monitors/byCBSA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							cbsa</td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns NO2 monitors for the Charlotte-Concord-Gastonia, NC-SC CBSA that were operating on January 01, 2017:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/monitors/byCBSA?email=test@aqs.api&key=test&param=42602&bdate=20170101&edate=20170101&cbsa=16740">
+								https://aqs.epa.gov/data/api/monitors/byCBSA?email=test@aqs.api&key=test&amp;param=42602&bdate=20170101&edate=20170101&cbsa=16740</a>
+							</div>
+						</td>
+					</tr>
+					
+					
+				</tbody>
+			</table>
+
+		
+
+						
+
+		<h3 ID="sample">Sample Data</h3>
+		<p>Returns sample data - the finest grain data reported to EPA.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Sample Data</td>
+						<td rowspan="2">By Site</td>
+						<td>sampleData/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all ozone data for the Millbrook School site (#0014) in Wake County, NC for June 18, 2017:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/sampleData/bySite?email=test@aqs.api&key=test&param=44201&bdate=20170618&edate=20170618&state=37&county=183&site=0014">
+								https://aqs.epa.gov/data/api/sampleData/bySite?email=test@aqs.api&key=test&amp;param=44201&bdate=20170618&edate=20170618&state=37&county=183&site=0014</a>
+							</div>
+							<div>Example; returns all ozone data for the Millbrook School site (#0014) in Wake County, NC for June 18, 2017 that changed after January 01, 2018 (and before the end of 2018):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/sampleData/bySite?email=test@aqs.api&key=test&param=44201&bdate=20170618&edate=20170618&cbdate=20180101&cedate=20181231&state=37&county=183&site=0014">
+								https://aqs.epa.gov/data/api/sampleData/bySite?email=test@aqs.api&key=test&amp;param=44201&bdate=20170618&edate=20170618&cbdate=20180101&cedate=20181231&state=37&county=183&site=0014</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>sampleData/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all FRM/FEM PM2.5 data for Wake County, NC between January and February 2016:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/sampleData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160228&state=37&county=183">
+								https://aqs.epa.gov/data/api/sampleData/byCounty?email=test@aqs.api&key=test&amp;param=88101&bdate=20160101&edate=20160228&state=37&county=183</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>sampleData/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all benzene samples from North Carolina collected on May 15th, 1995:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/sampleData/byState?email=test@aqs.api&key=test&param=45201&bdate=19950515&edate=19950515&state=37">
+								https://aqs.epa.gov/data/api/sampleData/byState?email=test@aqs.api&key=test&amp;param=45201&bdate=19950515&edate=19950515&state=37</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Box</td>
+						<td>sampleData/byBox</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#minlat">minlat</a>,
+							<a href="#maxlat">maxlat</a>,
+							<a href="#minlon">minlon</a>,
+							<a href="#maxlon">maxlon</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all ozone samples in the vicinity of central Alabama for the first two days in May, 2015:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/sampleData/byBox?email=test@aqs.api&key=test&param=44201&bdate=20150501&edate=20150502&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7">
+								https://aqs.epa.gov/data/api/sampleData/byBox?email=test@aqs.api&key=test&amp;param=44201&bdate=20150501&edate=20150502&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By CBSA</td>
+						<td>sampleData/byCBSA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#cbsa">cbsa</a>
+						</td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a>
+						</td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns NO2 data for the Charlotte-Concord-Gastonia, NC-SC CBSA for January 01, 2017:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/sampleData/byCBSA?email=test@aqs.api&key=test&param=42602&bdate=20170101&edate=20170101&cbsa=16740">
+								https://aqs.epa.gov/data/api/sampleData/byCBSA?email=test@aqs.api&key=test&amp;param=42602&bdate=20170101&edate=20170101&cbsa=16740</a>
+							</div>
+						</td>
+					</tr>
+					
+				</tbody>
+			</table>
+			
+			
+
+							
+
+
+		<h3 ID="daily">Daily Summary Data</h3>
+		<p>Returns data summarized at the daily level. All daily summaries are 
+			calculated on midnight to midnight basis in local time. Variables 
+			returned include date, mean value, maximum value, etc.  Data is at 
+			the monitor level and may Include 
+			more than one entry per monitor.  There may be multiple entries for different 
+			(1) sample durations, (2) pollutant standards.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Daily Summary Data</td>
+						<td rowspan="2">By Site</td>
+						<td>dailyData/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns daily summary ozone data for the Millbrook School site (#0014) in Wake County, NC for June 18, 2017:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/dailyData/bySite?email=test@aqs.api&key=test&param=44201&bdate=20170618&edate=20170618&state=37&county=183&site=0014">
+								https://aqs.epa.gov/data/api/dailyData/bySite?email=test@aqs.api&key=test&amp;param=44201&bdate=20170618&edate=20170618&state=37&county=183&site=0014</a>
+							</div>
+							<div>Example; returns all ozone daily summary data for the Millbrook School site (#0014) in Wake County, NC for June 18, 2017 that changed after January 01, 2018 (and before the end of 2018):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/dailyData/bySite?email=test@aqs.api&key=test&param=44201&bdate=20170618&edate=20170618&cbdate=20180101&cedate=20181231&state=37&county=183&site=0014">
+								https://aqs.epa.gov/data/api/dailyData/bySite?email=test@aqs.api&key=test&amp;param=44201&bdate=20170618&edate=20170618&cbdate=20180101&cedate=20181231&state=37&county=183&site=0014</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>dailyData/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns daily summary FRM/FEM PM2.5 data for Wake County, NC between January and February 2016:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20160101&edate=20160228&state=37&county=183">
+								https://aqs.epa.gov/data/api/dailyData/byCounty?email=test@aqs.api&key=test&amp;param=88101&bdate=20160101&edate=20160228&state=37&county=183</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>dailyData/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all benzene daily summaries from North Carolina collected on May 15th, 1995:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/dailyData/byState?email=test@aqs.api&key=test&param=45201&bdate=19950515&edate=19950515&state=37">
+								https://aqs.epa.gov/data/api/dailyData/byState?email=test@aqs.api&key=test&amp;param=45201&bdate=19950515&edate=19950515&state=37</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Box</td>
+						<td>dailyData/byBox</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#minlat">minlat</a>,
+							<a href="#maxlat">maxlat</a>,
+							<a href="#minlon">minlon</a>,
+							<a href="#maxlon">maxlon</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns ozone daily summaries in the vicinity of central Alabama for the first two days in May, 2015:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/dailyData/byBox?email=test@aqs.api&key=test&param=44201&bdate=20150501&edate=20150502&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7">
+								https://aqs.epa.gov/data/api/dailyData/byBox?email=test@aqs.api&key=test&amp;param=44201&bdate=20150501&edate=20150502&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By CBSA</td>
+						<td>dailyData/byCBSA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#cbsa">cbsa</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns daily summary NO2 data for the Charlotte-Concord-Gastonia, NC-SC CBSA for January 01, 2017:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/dailyData/byCBSA?email=test@aqs.api&key=test&param=42602&bdate=20170101&edate=20170101&cbsa=16740">
+								https://aqs.epa.gov/data/api/dailyData/byCBSA?email=test@aqs.api&key=test&amp;param=42602&bdate=20170101&edate=20170101&cbsa=16740</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+				
+				
+
+								
+
+
+		<h3 ID="annual">Annual Summary</h3>
+		<p>Returns data summarized at the yearly level. Variables include mean value, 
+			maxima, percentiles, etc.  Data is at the monitor level and may Include 
+			more than one entry per monitor.  There may be multiple entries for different 
+			(1) sample durations, (2) pollutant standards. </p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Annual Summary Data</td>
+						<td rowspan="2">By Site</td>
+						<td>annualData/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns annual summary ozone data for the Millbrook School site (#0014) in Wake County, NC for 2017 (Note, for annual data, only the year portion of the bdate and edate are used and only whole years of data are returned.  For example, bdate = 20171231 and edate = 20180101 will return full data for 2017 and 2018):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/annualData/bySite?email=test@aqs.api&key=test&param=44201&bdate=20170618&edate=20170618&state=37&county=183&site=0014">
+								https://aqs.epa.gov/data/api/annualData/bySite?email=test@aqs.api&key=test&amp;param=44201&bdate=20170618&edate=20170618&state=37&county=183&site=0014</a>
+							</div>
+							<div>Example; returns all ozone annual summary data for the Millbrook School site (#0014) in Wake County, NC for June 18, 2017 that changed after January 01, 2018 (and before the end of 2018):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/annualData/bySite?email=test@aqs.api&key=test&param=44201&bdate=20170618&edate=20170618&cbdate=20180101&cedate=20181231&state=37&county=183&site=0014">
+								https://aqs.epa.gov/data/api/annualData/bySite?email=test@aqs.api&key=test&amp;param=44201&bdate=20170618&edate=20170618&cbdate=20180101&cedate=20181231&state=37&county=183&site=0014</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>annualData/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns annual summary FRM/FEM and non-FRM PM2.5 data for Wake County, NC between January and February 2016:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/annualData/byCounty?email=test@aqs.api&key=test&param=88101,88502&bdate=20160101&edate=20160228&state=37&county=183">
+								https://aqs.epa.gov/data/api/annualData/byCounty?email=test@aqs.api&key=test&amp;param=88101,88502&bdate=20160101&edate=20160228&state=37&county=183</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>annualData/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns all benzene annual summaries from North Carolina collected for 1995:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/annualData/byState?email=test@aqs.api&key=test&param=45201&bdate=19950515&edate=19950515&state=37">
+								https://aqs.epa.gov/data/api/annualData/byState?email=test@aqs.api&key=test&amp;param=45201&bdate=19950515&edate=19950515&state=37</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Box</td>
+						<td>annualData/byBox</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#minlat">minlat</a>,
+							<a href="#maxlat">maxlat</a>,
+							<a href="#minlon">minlon</a>,
+							<a href="#maxlon">maxlon</a></td>
+						<td><a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns ozone annual summaries in the vicinity of central Alabama for the first two days in May, 2015:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/annualData/byBox?email=test@aqs.api&key=test&param=44201&bdate=20150501&edate=20150502&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7">
+								https://aqs.epa.gov/data/api/annualData/byBox?email=test@aqs.api&key=test&amp;param=44201&bdate=20150501&edate=20150502&minlat=33.3&maxlat=33.6&minlon=-87.0&maxlon=-86.7</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By CBSA</td>
+						<td>annualData/byCBSA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#cbsa">cbsa</a></td>
+						<td>
+							<a href="#cbdate">cbdate</a>,
+							<a href="#cedate">cedate</a></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns annual summary NO2 data for the Charlotte-Concord-Gastonia, NC-SC CBSA for January 01, 2017:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/annualData/byCBSA?email=test@aqs.api&key=test&param=42602&bdate=20170101&edate=20170101&cbsa=16740">
+								https://aqs.epa.gov/data/api/annualData/byCBSA?email=test@aqs.api&key=test&amp;param=42602&bdate=20170101&edate=20170101&cbsa=16740</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+					
+					
+
+									
+
+
+
+		<h3 ID="blanks">QA Blanks</h3>
+			<p>This service returns the concentration from blank samplers.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Quality Assurance - Blanks Data</td>
+						<td rowspan="2">By Site</td>
+						<td>qaBlanks/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns PM2.5 blank data for the Muscle Shoals site (#0014) in Colbert County, AL  for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaBlanks/bySite?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01&county=033&site=1002">
+								https://aqs.epa.gov/data/api/qaBlanks/bySite?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01&county=033&site=1002</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>qaBlanks/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns PM2.5 blank data for Colbert County, AL for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaBlanks/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01&county=033">
+								https://aqs.epa.gov/data/api/qaBlanks/byCounty?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01&county=033</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>qaBlanks/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns PM2.5 blank data for Alabama for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaBlanks/byState?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01">
+								https://aqs.epa.gov/data/api/qaBlanks/byState?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01</a>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td rowspan="2">By Primary Quality Assurance Organization</td>
+						<td>qaBlanks/byPQAO</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#pqao">pqao</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns PM2.5 blank data for January 2018 where the PQAO is the Alabama Department of Environmental Management (agency 0013):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaBlanks/byPQAO?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&pqao=0013">
+								https://aqs.epa.gov/data/api/qaBlanks/byPQAO?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&pqao=0013</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Monitoring Agency</td>
+						<td>qaBlanks/byMA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#ma">ma</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns PM2.5 blank data for January 2018 where the Monitoring Agency is the Alabama Department of Environmental Management (agency 0013):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaBlanks/byMA?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&agency=0013">
+								https://aqs.epa.gov/data/api/qaBlanks/byMA?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&agency=0013</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+
+							
+		<h3 ID="collocated">QA Collocated Assessments</h3>
+			<p>This service returns pairs of samples collected at the same time and place
+			by different samplers.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Quality Assurance - Collocated Assessments</td>
+						<td rowspan="2">By Site</td>
+						<td>qaCollocatedAssessments/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns collocated assessment data for FRM PM2.5 at the Huntsville Old Airport site (#0014) in Madison County, AL for January 2013:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaCollocatedAssessments/bySite?email=test@aqs.api&key=test&param=88101&bdate=20130101&edate=20130131&state=01&county=089&site=0014">
+								https://aqs.epa.gov/data/api/qaCollocatedAssessments/bySite?email=test@aqs.api&key=test&amp;param=88101&bdate=20130101&edate=20130131&state=01&county=089&site=0014</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>qaCollocatedAssessments/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns collocated assessment data for FRM PM2.5 in Madison County, AL for January 2013:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaCollocatedAssessments/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20130101&edate=20130131&state=01&county=089">
+								https://aqs.epa.gov/data/api/qaCollocatedAssessments/byCounty?email=test@aqs.api&key=test&amp;param=88101&bdate=20130101&edate=20130131&state=01&county=089</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>qaCollocatedAssessments/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns collocated assessment data for FRM PM2.5 in Alabama for January 2013:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaCollocatedAssessments/byState?email=test@aqs.api&key=test&param=88101&bdate=20130101&edate=20130131&state=01">
+								https://aqs.epa.gov/data/api/qaCollocatedAssessments/byState?email=test@aqs.api&key=test&amp;param=88101&bdate=20130101&edate=20130131&state=01</a>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td rowspan="2">By Primary Quality Assurance Organization</td>
+						<td>qaCollocatedAssessments/byPQAO</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#pqao">pqao</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns collocated assessment data for FRM PM2.5 January 2013 where the PQAO is the Alabama Department of Environmental Management (agency 0013):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaCollocatedAssessments/byPQAO?email=test@aqs.api&key=test&param=88101&bdate=20130101&edate=20130131&pqao=0013">
+								https://aqs.epa.gov/data/api/qaCollocatedAssessments/byPQAO?email=test@aqs.api&key=test&amp;param=88101&bdate=20130101&edate=20130131&pqao=0013</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Monitoring Agency</td>
+						<td>qaCollocatedAssessments/byMA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#ma">ma</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns collocated assessment data for FRM PM2.5 January 2013 where the Monitoring Agency is the Alabama Department of Environmental Management (agency 0013):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaCollocatedAssessments/byMA?email=test@aqs.api&key=test&param=88101&bdate=20130101&edate=20130131&agency=0013">
+								https://aqs.epa.gov/data/api/qaCollocatedAssessments/byMA?email=test@aqs.api&key=test&amp;param=88101&bdate=20130101&edate=20130131&agency=0013</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+
+
+		<h3 ID="frv">QA Flow Rate Verifications</h3>
+			<p>This service returns the flow rate checks performed by monitoring agencies.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Quality Assurance - Flow Rate Verifications</td>
+						<td rowspan="2">By Site</td>
+						<td>qaFlowRateVerifications/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns Flow Rate Verification data for the Muscle Shoals site (#0014) in Colbert County, AL  for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaFlowRateVerifications/bySite?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01&county=033&site=1002">
+								https://aqs.epa.gov/data/api/qaFlowRateVerifications/bySite?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01&county=033&site=1002</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>qaFlowRateVerifications/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns Flow Rate Verification data for Colbert County, AL for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaFlowRateVerifications/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01&county=033">
+								https://aqs.epa.gov/data/api/qaFlowRateVerifications/byCounty?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01&county=033</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>qaFlowRateVerifications/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns Flow Rate Verification data for Alabama for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaFlowRateVerifications/byState?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01">
+								https://aqs.epa.gov/data/api/qaFlowRateVerifications/byState?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01</a>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td rowspan="2">By Primary Quality Assurance Organization</td>
+						<td>qaFlowRateVerifications/byPQAO</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#pqao">pqao</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns Flow Rate Verification data for January 2018 where the PQAO is the Alabama Department of Environmental Management (agency 0013):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaFlowRateVerifications/byPQAO?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&pqao=0013">
+								https://aqs.epa.gov/data/api/qaFlowRateVerifications/byPQAO?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&pqao=0013</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Monitoring Agency</td>
+						<td>qaFlowRateVerifications/byMA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#ma">ma</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns Flow Rate Verification data for January 2018 where the Monitoring Agency is the Alabama Department of Environmental Management (agency 0013):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaFlowRateVerifications/byMA?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&agency=0013">
+								https://aqs.epa.gov/data/api/qaFlowRateVerifications/byMA?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&agency=0013</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+
+			<h3 ID="fra">QA Flow Rate Audits</h3>
+				<p>This service returns flow rate audit data.</p> 
+	
+				<table class="examples" summary="Web service details and examples.">
+					<thead>
+						<tr>
+							<th>Service</th>
+							<th>Filter</th>
+							<th>Endpoint</th>
+							<th>Required Variables</th>
+							<th>Optional Variables</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="10">Quality Assurance - Flow Rate Audits</td>
+							<td rowspan="2">By Site</td>
+							<td>qaFlowRateAudits/bySite</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+							    <a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#state">state</a>, 
+								<a href="#county">county</a>, 
+								<a href="#site">site</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns Flow Rate Audit data for the Wylam site (#2003) in Jefferson County, AL  for January 2018:</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaFlowRateAudits/bySite?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01&county=073&site=2003">
+									https://aqs.epa.gov/data/api/qaFlowRateAudits/bySite?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01&county=073&site=2003</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td rowspan="2">By County</td>
+							<td>qaFlowRateAudits/byCounty</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#state">state</a>, 
+								<a href="#county">county</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns Flow Rate Audit data for Jefferson County, AL for January 2018:</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaFlowRateAudits/bySite?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01&county=073">
+									https://aqs.epa.gov/data/api/qaFlowRateAudits/bySite?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01&county=073</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td rowspan="2">By State</td>
+							<td>qaFlowRateAudits/byState</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#state">state</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns Flow Rate Audit data for Alabama for January 2018:</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaFlowRateAudits/byState?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&state=01">
+									https://aqs.epa.gov/data/api/qaFlowRateAudits/byState?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&state=01</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							
+							<td rowspan="2">By Primary Quality Assurance Organization</td>
+							<td>qaFlowRateAudits/byPQAO</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#pqao">pqao</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns Flow Rate Audit data for January 2018 where the PQAO is the Jefferson County, AL  Department Of Health (agency 0550):</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaFlowRateAudits/byPQAO?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&pqao=0550">
+									https://aqs.epa.gov/data/api/qaFlowRateAudits/byPQAO?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&pqao=0550</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td rowspan="2">By Monitoring Agency</td>
+							<td>qaFlowRateAudits/byMA</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#ma">ma</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns Flow Rate Audit data for January 2018 where the Monitoring Agency is the Jefferson County, AL  Department Of Health (agency 0550):</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaFlowRateAudits/byMA?email=test@aqs.api&key=test&param=88101&bdate=20180101&edate=20180131&agency=0550">
+									https://aqs.epa.gov/data/api/qaFlowRateAudits/byMA?email=test@aqs.api&key=test&amp;param=88101&bdate=20180101&edate=20180131&agency=0550</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+
+		<h3 ID="onepointqc">QA One Point QC Raw Data</h3>
+			<p>This service returns the measured versus actual concentration of 1 point QC checks.</p> 
+
+			<table class="examples" summary="Web service details and examples.">
+				<thead>
+					<tr>
+						<th>Service</th>
+						<th>Filter</th>
+						<th>Endpoint</th>
+						<th>Required Variables</th>
+						<th>Optional Variables</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="10">Quality Assurance - One Point Quality Control Raw Data</td>
+						<td rowspan="2">By Site</td>
+						<td>qaOnePointQcRawData/bySite</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a>, 
+							<a href="#site">site</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns One Point QC data for ozone at the Truro National Seashore site (#0002) in Barnstable County, MA for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaOnePointQcRawData/bySite?email=test@aqs.api&key=test&param=44201&bdate=20180101&edate=20180131&state=25&county=001&site=0002">
+								https://aqs.epa.gov/data/api/qaOnePointQcRawData/bySite?email=test@aqs.api&key=test&amp;param=44201&bdate=20180101&edate=20180131&state=25&county=001&site=0002</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By County</td>
+						<td>qaOnePointQcRawData/byCounty</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a>, 
+							<a href="#county">county</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns One Point QC data for ozone in Barnstable County, MA for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaOnePointQcRawData/byCounty?email=test@aqs.api&key=test&param=44201&bdate=20180101&edate=20180131&state=25&county=001">
+								https://aqs.epa.gov/data/api/qaOnePointQcRawData/byCounty?email=test@aqs.api&key=test&amp;param=44201&bdate=20180101&edate=20180131&state=25&county=001</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By State</td>
+						<td>qaOnePointQcRawData/byState</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#state">state</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns One Point QC data for ozone in Massachusetts for January 2018:</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaOnePointQcRawData/byState?email=test@aqs.api&key=test&param=44201&bdate=20180101&edate=20180131&state=25">
+								https://aqs.epa.gov/data/api/qaOnePointQcRawData/byState?email=test@aqs.api&key=test&amp;param=44201&bdate=20180101&edate=20180131&state=25</a>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						
+						<td rowspan="2">By Primary Quality Assurance Organization</td>
+						<td>qaOnePointQcRawData/byPQAO</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#pqao">pqao</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns ozone One Point QC data for January 2018 where the PQAO is the Massachusetts Department of Environmental Protection (agency 0660):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaOnePointQcRawData/byPQAO?email=test@aqs.api&key=test&param=44201&bdate=20180101&edate=20180131&pqao=0660">
+								https://aqs.epa.gov/data/api/qaOnePointQcRawData/byPQAO?email=test@aqs.api&key=test&amp;param=44201&bdate=20180101&edate=20180131&pqao=0660</a>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						
+						<td rowspan="2">By Monitoring Agency</td>
+						<td>qaOnePointQcRawData/byMA</td>
+						<td><a href="#email">email</a>, 
+							<a href="#key">key</a>, 
+							<a href="#param">param</a>, 
+							<a href="#bdate">bdate</a>, 
+							<a href="#edate">edate</a>, 
+							<a href="#ma">ma</a></td>
+						<td></td>
+					</tr>
+					<tr>	
+						<td colspan="3">
+							<div>Example; returns ozone One Point QC data for January 2018 where the Monitoring Agency is the Massachusetts Department of Environmental Protection (agency 0660):</div>
+							<div>
+								<a href="https://aqs.epa.gov/data/api/qaOnePointQcRawData/byMA?email=test@aqs.api&key=test&param=44201&bdate=20180101&edate=20180131&agency=0660">
+								https://aqs.epa.gov/data/api/qaOnePointQcRawData/byMA?email=test@aqs.api&key=test&amp;param=44201&bdate=20180101&edate=20180131&agency=0660</a>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+
+
+			<h3 ID="pep">QA PEP Audits</h3>
+				<p>This service returns data related to PM2.5 monitoring system audits.</p> 
+	
+				<table class="examples" summary="Web service details and examples.">
+					<thead>
+						<tr>
+							<th>Service</th>
+							<th>Filter</th>
+							<th>Endpoint</th>
+							<th>Required Variables</th>
+							<th>Optional Variables</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="10">Quality Assurance - PEP Audits</td>
+							<td rowspan="2">By Site</td>
+							<td>qaPepAudits/bySite</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#state">state</a>, 
+								<a href="#county">county</a>, 
+								<a href="#site">site</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns PEP Audit data for FRM PM2.5 at the Huntsville Old Airport site (#0014) in Madison County, AL for 2017:</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaPepAudits/bySite?email=test@aqs.api&key=test&param=88101&bdate=20170101&edate=20171231&state=01&county=089&site=0014">
+									https://aqs.epa.gov/data/api/qaPepAudits/bySite?email=test@aqs.api&key=test&amp;param=88101&bdate=20170101&edate=20171231&state=01&county=089&site=0014</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td rowspan="2">By County</td>
+							<td>qaPepAudits/byCounty</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#state">state</a>, 
+								<a href="#county">county</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns PEP Audit data for FRM PM2.5 in Madison County, AL for 2017:</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaPepAudits/byCounty?email=test@aqs.api&key=test&param=88101&bdate=20170101&edate=20171231&state=01&county=089">
+									https://aqs.epa.gov/data/api/qaPepAudits/byCounty?email=test@aqs.api&key=test&amp;param=88101&bdate=20170101&edate=20171231&state=01&county=089</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td rowspan="2">By State</td>
+							<td>qaPepAudits/byState</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#state">state</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns PEP Audit data for FRM PM2.5 in Alabama for 2017:</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaPepAudits/bySite?email=test@aqs.api&key=test&param=88101&bdate=20170101&edate=20171231&state=01">
+									https://aqs.epa.gov/data/api/qaPepAudits/bySite?email=test@aqs.api&key=test&amp;param=88101&bdate=20170101&edate=20171231&state=01</a>
+								</div>
+							</td>
+						</tr>
+
+						<tr>
+							
+							<td rowspan="2">By Primary Quality Assurance Organization</td>
+							<td>qaPepAudits/byPQAO</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#pqao">pqao</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns PEP Audit data for June 2017 where the PQAO is the Alabama Department of Environmental Management (agency 0013):</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaPepAudits/byPQAO?email=test@aqs.api&key=test&param=88101&bdate=20170601&edate=20170630&pqao=0013">
+									https://aqs.epa.gov/data/api/qaPepAudits/byPQAO?email=test@aqs.api&key=test&amp;param=88101&bdate=20170601&edate=20170630&pqao=0013</a>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							
+							<td rowspan="2">By Monitoring Agency</td>
+							<td>qaPepAudits/byMA</td>
+							<td><a href="#email">email</a>, 
+								<a href="#key">key</a>, 
+								<a href="#param">param</a>, 
+								<a href="#bdate">bdate</a>, 
+								<a href="#edate">edate</a>, 
+								<a href="#ma">ma</a></td>
+							<td></td>
+						</tr>
+						<tr>	
+							<td colspan="3">
+								<div>Example; returns PEP Audit data for June 2017 where the Monitoring Agency is the Alabama Department of Environmental Management (agency 0013):</div>
+								<div>
+									<a href="https://aqs.epa.gov/data/api/qaPepAudits/byMA?email=test@aqs.api&key=test&param=88101&bdate=20170601&edate=20170630&agency=0013">
+									https://aqs.epa.gov/data/api/qaPepAudits/byMA?email=test@aqs.api&key=test&amp;param=88101&bdate=20170601&edate=20170630&agency=0013</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+
+
+				<br>
+	  
+			<p class="pagetop"><a href="#main-content">Top of Page</a></p>
+
+	  
+				
+	  <hr>
+	  <h3 ID="format">Output Format - JSON</h3>
+	  <p>The only output format available from the services is JSON.  This is in conformity with the 
+	     <a href="https://developer.epa.gov/guide/templates-guides/design-build/standards/api-strategy-3/1-follow-18f-api-standardsbest-practices/">
+		 18f API standards for government.</a></p>
+
+	  <p>The JSON response has two top-level elements.  A header and a body.  The header contains information about the request and the body contains
+	     the data.<p>
+      <p>The header contains the following elements:</p>
+	  <ul><li>status.  "SUCCESS" if the request returned data.  "FAILED" if the request could not be processed.  "No data matched your selection" if
+	          the request was processed but resulted in no data.</li>
+		  <li>request_time.  The date and time (at the location of the server) when the request was received.</li>
+		  <li>url.  The original URL that was submitted to make the request.</li>
+		  <li>row.  The number of rows of data in the body object.</li>
+		  <li>errors.  Any errors encountered when attempting to respond to the request.</li></ul>
+	  <p>The body is an array with one object per data row.  The contents of the object will vary based on the request made. (E.g. the columns
+	     of data returned are different for each query.</p>
+	  Here is a sample of the output of a Raw Data request with one data point:</p>
+		 
+		 <pre><small><code>
+			{
+			  "Header": [
+				{
+				  "status": "success",
+				  "request_time": "2018-06-13T07:45:01-04:00",
+				  "url": "https://...",
+				  "rows": 1
+				}
+			  ],
+			  "Body": [
+				{
+				  "state_code": "01",
+				  "county_code": "073",
+				  "site_number": "0023",
+				  "parameter_code": "88101",
+				  "poc": 1.0,
+				  "latitude": 33.0,
+				  "longitude": -86.0,
+				  "datum": "WGS84",
+				  "parameter_name": "PM2.5 - Local Conditions",
+				  "date_local": "2017-04-01",
+				  "time_local": "00:00",
+				  "date_gmt": "2017-04-01",
+				  "time_gmt": "06:00",
+				  "sample_measurement": 6.2,
+				  "unit_of_measure": "Micrograms/cubic meter (LC)",
+				  "detection_limit": 2.0,
+				  "uncertainty": null,
+				  "qualifiers": null,
+				  "method_type": "FRM",
+				  "method_code": "142",
+				  "method_name": "BGI Models PQ200-VSCC or PQ200A-VSCC - Gravimetric",
+				  "state_name": "Alabama",
+				  "county_name": "Jefferson",
+				  "date_of_last_change": "2017-05-30",
+				  "cbsa_code": "13820"
+				}
+			  ]
+			}
+		 </code></small></pre>
+		<p class="pagetop"><a href="#main-content">Top of Page</a></p>
+	  
+	  
+	  
+	  <h3 ID="spreadsheet">Loading JSON into Excel</h3>
+	  <p>If you want to import this data into Excel, follow these steps (these may vary depending on your software version):</p>
+	  <ul>
+	    <li>Save the output of your query as a .json file</li>
+		<li>Open Excel (the imported data will be added as a new sheet to a new or existing workbook)</li>
+		<li>Go to the "Data" tab</li>
+		<li>Select Get Data > From File > From JSON from the ribbon (you may have to go to Data > New Query > From File > From JSON depending on your Excel configuration)</li>
+		<li>Find the file and open it - this should take you to the "Power Query Editor" and the "Convert" pane</li>
+		<li>Select "Into Table" from the ribbon - this should display two columns called "Name" and "Value"</li>
+		<li>Click on the grey box next to the word "Value" (the box contains a left-pointing arrow and a right-pointing arrow)</li>
+		<li>Select "Expand to new rows" - this may add rows to your display</li>
+		<li>Again, click on the grey box next to the word "Value" (the box contains a left-pointing arrow and a right-pointing arrow)</li>
+		<li>Uncheck any columns you do not want (e.g., those from the header: status, request_time, url, and rows)</li>
+		<li>(Optional) Uncheck the box at the bottom: "Use original column names as prefix"</li>
+		<li>Click "OK" to close the dialogue box</li>
+		<li>Note, you can now remove columns and sort data in this view.</li>
+		<li>Click "Close &amp; Load" from the close pane (top left)</li>
+		<li>Wait a few moments and the data will appear, one row for the header and one for each record of data</li>
+	  </ul>
+	  <br>
+	  <p>The data is loaded as a table in a new sheet in the workbook.  This makes some Excel functions
+	  "grey out" (e.g., sort) when the entire sheet is selected. To sort, for example, select a cell in
+	  table header (rather than the entire workbook or workbook header) and the sort functionality should work.</p>
+	  
+	  <p>You can query the API from within Excel.  At the "Data" tab, select Get Data > From Other Sources > From Web.  
+	  Enter the API request URL in the form and select "OK".
+	  Excel should run the query and take you to the "Power Query Editor".  Use the steps outlined above to
+	  load the data into a sheet.</p>
+	  <p class="pagetop"><a href="#main-content">Top of Page</a></p>
+
+	  
+	  
+	  <hr>
+	  <h3 ID="errors">Error Handling and Status Codes</h3>
+	  <p>If the API is able to parse your request it will return the JSON described above and an HTTP status of 200.</p>
+	  
+	  <p>If the API is not able to parse your request it will return a status code of 400 and only the header, which will include an 
+	     array of error messages instead of a row count.  For example:</p>
+	   
+	   <pre><small><code>
+	     {
+		  "Header": [
+			{
+			  "status": "Failed",
+			  "request_time": "2018-06-13T08:05:46.588-04:00",
+			  "url": "https://...",
+			  "error": [
+			    "value is missing or the value is empty: param"
+			]
+			}
+		  ],
+		  "Body": []
+		}
+		</code></small></pre>
+	   
+	   
+	  <p>If the API is able to parse your request but no data matches your selections, it will return the JSON header and 
+	     an HTTP status of 200.  The row count will be zero, the status will be a message that no data matched your selection criteria, and the body will be empty.</p>
+	  
+	  <pre><small><code>
+	    {
+		  "Header": [
+			{
+			  "status": "No data matched your selection",
+			  "request_time": "2018-06-13T10:15:42-04:00",
+			  "url": "https://...",
+			  "rows": 0
+			}
+		  ],
+		  "Body": []
+		}
+		</code></small></pre>
+		<p class="pagetop"><a href="#main-content">Top of Page</a></p>
+
+
+
+
+
+	  <hr>
+	  <h3 ID="terms">Request Limits and Terms of Service</h3>
+	  <p>The API has the following limits imposed on request size:</p>
+	  <ul>
+	    <li><strong>Length of time</strong>.  All services (except Monitor) must have the end date (edate field) be in the 
+		same year as the begin date (bdate field).</li>
+		<li><strong>Number of parameters</strong>.  Most services allow for the selection of multiple parameter codes (param field).  A maximum of 5 parameter codes may be listed in a single request.</li>
+	  </ul>
+	  
+	  <p>Please adhere to the following when using the API.</p>
+	  <ul>
+	    <li><strong>Limit the size of queries</strong>.  Our database contains billions of values and you may request more than you intend.
+		    If you are unsure of the amount of data, start small and work your way up.
+			We request that you limit queries to 1,000,000 rows of data each.
+            You can use the "observation count" field on the annualData service to determine how much data exists for a time-parameter-geography combination.			
+			If you have any questions or need advice, please <a href="mailto:aqsdatamart@epa.gov">contact us</a>.</li>
+		<li><strong>Limit the frequency of queries</strong>.  Our system can process a limited load.
+		    If scripting requests, please wait for one request to complete before submitting another and do not make more than 10 requests per minute.
+			Also, we request a pause of 5 seconds between requests and adjust accordingly for response time and size.</li>
+	  </ul>
+	  If you violate these terms, we may disable your account without notice (but we will be in contact via the email address provided).
+	  <br>
+	  <p class="pagetop"><a href="#main-content">Top of Page</a></p>
+
+
+
+
+		
+	  <hr>
+	  <h3 ID="tips">Usage tips</h3>
+	  <p>This section contains suggestions for completing certain data related tasks.</p>
+	  <ul>
+	    <li>Determine if or how much data exists for a time-parameter-geography combination:</li>
+		<ul>
+			<li>Retrieve data using the annualData service.</li>
+			<li>If no records are returned, we do not have the data.</li>
+			<li>If records are returned, use the observation count to determine the temporal and geographic distribution of the data.</li>
+		</ul>
+		<li>Monthly averages:</li>
+		<ul>
+			<li>AQS does not routinely calculate monthly aggregate statistics.</li>
+			<li>If you need these, you must calculate them yourself.</li>
+			<li>These can be calculated from the sample data or the daily data without loss of fidelity.</li>
+		</ul>
+		<li>Determine a single value for a site with collocated monitors:</li>
+		<ul>
+			<li>Many sites will have collocated monitors - monitors collecting the same parameter at the same time.</li>
+			<li>The API currently provides only monitor level values.  (We anticipate adding site-level values at some point.)</li>
+			<li>For some criteria pollutants (PM2.5, ozone, lead, and NO2), the regulations define procedures for defining a single site-level value.</li>
+			<li>For other pollutants, determining a single site-level value is left to the investigator.</li>
+		</ul>
+	  </ul>
+	  <br>
+	  <p class="pagetop"><a href="#main-content">Top of Page</a></p>
+	  
+	  
+	  
+	  
+	  <hr>
+	  <h3 ID="v1">What has changed from the API version 1</h3> 
+	  <p>The following changes have been made to the web services.</p>
+	  <ul>
+	    <li>All output is JSON.  In conformity with 
+		    <a href="https://developer.epa.gov/guide/templates-guides/design-build/standards/api-strategy-3/1-follow-18f-api-standardsbest-practices/">
+			federal API standards</a>, all output is now JSON</li>
+	    <li>Services have been added.  Instead of one primary service, raw data, there now a multitude of services.</li>
+        <li>The request structure has been simplified.  Rather than having a mixture of required and optional variables, each service has required 
+		    variables and some have the optional change begin and end dates.</li>	
+	    <li>There is no interface to help users build a query.  Previously, an interface was provided with drop downs to assist users in building a query.  
+		    In retrospect, this led to as many questions as is solved, so we are no longer providing it.</li>
+		<li>Asynchronous requests have been removed.  All requests now return data.</li>
+		<li>Uptime should be better.  The number of moving parts behind the scenes has been reduced and we expect less downtime.</li>
+		<li>Terms have changed.  "User ID" and "password" have been changed to "email" and "key" to better reflect meaning.  Old accounts are still valid.</li>
+		<li>Query size limits have been removed.  You may query as much data as you like.  If this does not work, we will put limits on accounts.</li>
+		<li>The URL has changed from aqs.epa.gov/api to aqs.epa.gov/data/api.  This is to allow for both to run concurrently during
+		    the transition period and to make room for other potential (non-data) APIs.
+		<li>The sample data service returns null samples.</li>
+	  </ul>
+	  <p class="pagetop"><a href="#main-content">Top of Page</a></p>
+	  
+	  
+	  
+	  
+	  <hr>
+	  <h3 ID="changes">Change log and planned enhancements</h3> 
+	  <br>
+	  <strong>Change log</strong>
+	  <p>To see the recent changes to the API and data, use 
+		  the <a href="meta">Revision History</a> service.  For example:</p>
+	  <p><a href="https://aqs.epa.gov/data/api/metaData/revisionHistory?email=test@aqs.api&key=test">
+		https://aqs.epa.gov/data/api/metaData/revisionHistory?email=test@aqs.api&key=test</a>
+		</p>
+
+
+		<strong>Known issues</strong>
+		<p>To see any known issues with the API or the AQS data, use 
+			the <a href="meta">Known Issues</a> service.  For example:</p>
+		<p><a href="https://aqs.epa.gov/data/api/metaData/issues?email=test@aqs.api&key=test">
+			https://aqs.epa.gov/data/api/metaData/issues?email=test@aqs.api&key=test</a>
+		  </p>		
+
+
+
+	  <strong>Planned enhancements</strong>
+	  <ul>
+			<li>Add the ability to filter data by sample duration.  The user will 
+				be able to select a single duration to be returned: 1-hour, 5-minute, etc.
+				(early 2020)</li>
+	    	<li>Add "by zip code" as a retrieval method for all services.
+				(no planned implementation date)</li>
+	  </ul>
+	  
+<!----
+	  <p>These are links to non-EPA web sites that provide resources of interest
+		  	to API users. You will leave the EPA.gov domain, and EPA cannot attest to 
+		  	the accuracy of the linked information. These links are not endorsements of 
+		  	the other site or the information it contains by EPA or any of its employees. 
+		  	Also, be aware that the privacy protection provided on the EPA.gov domain 
+		  	(see <a href="/home/privacy-and-security-notice">Privacy and Security Notice</a>) 
+		  	does not apply at linked sites. 
+		  	<span class="disclaimer">The following links exit this site 
+			  <a class="exit-disclaimer" href="/home/exit-epa" title="EPA's External Link Disclaimer">
+				Exit</a>
+			</span></p>
+---->
+
+
+
+	  <p class="pagetop"><a href="#main-content">Top of Page</a></p>
+	  
+	  
+	  
+	  <br>This page last updated on 2020-01-10<br>
+	  
+      <!-- C O N T E N T    B L O C K    E N D  -->
+
+
+
+          </div>
+        </div>
+      </div>
+      <div id="block-epa-og-footer" class="block block-epa-og">
+        <p></p>
+      </div>
+<!--googleoff: all-->
+    </div>
+  </section>
+  <nav class="nav simple-nav simple-main-nav" role="navigation">
+    <div class="nav__inner">
+      <h2 class="element-invisible">Main menu</h2>
+      <ul class="menu" role="menu">
+        <li class="menu-item" id="menu-learn" role="presentation"><a href="https://www.epa.gov/environmental-topics" title="Learn about Environmental Topics that EPA covers." class="menu-link" role="menuitem">Environmental Topics</a></li>
+        <li class="menu-item" id="menu-lawsregs" role="presentation"><a href="https://www.epa.gov/laws-regulations" title="Laws written by Congress provide the authority for EPA to write regulations. Regulations explain the technical, operational, and legal details necessary to implement laws." class="menu-link" role="menuitem">Laws &amp; Regulations</a></li>
+        <li class="menu-item" id="menu-about" role="presentation"><a href="https://www.epa.gov/aboutepa" title="Learn more about: our mission and what we do, how we are organized, and our history." class="menu-link" role="menuitem">About EPA</a></li>
+      </ul>
+    </div>
+  </nav>
+  <footer class="main-footer clearfix" role="contentinfo">
+    <div class="main-footer__inner">
+      <div class="region-footer">
+        <div class="block block-pane block-pane-epa-global-footer">
+          <div class="row cols-3">
+            <div class="col size-1of3">
+              <div class="col__title">Discover.</div>
+              <ul class="menu">
+                <li><a href="https://www.epa.gov/accessibility">Accessibility</a></li>
+                <li><a href="https://www.epa.gov/aboutepa/administrator-gina-mccarthy">EPA Administrator</a></li>
+                <li><a href="https://www.epa.gov/planandbudget">Budget &amp; Performance</a></li>
+                <li><a href="https://www.epa.gov/contracts">Contracting</a></li>
+                <li><a href="https://www.epa.gov/home/grants-and-other-funding-opportunities">Grants</a></li>
+                <li><a href="https://www.epa.gov/ocr/whistleblower-protections-epa-and-how-they-relate-non-disclosure-agreements-signed-epa-employees">No FEAR Act Data</a></li>
+                <li><a href="https://www.epa.gov/home/privacy-and-security-notice">Privacy and Security</a></li>
+              </ul>
+            </div>
+            <div class="col size-1of3">
+              <div class="col__title">Connect.</div>
+              <ul class="menu">
+                <li><a href="https://www.data.gov/">Data.gov</a></li>
+                <li><a href="https://www.epa.gov/office-inspector-general/about-epas-office-inspector-general">Inspector General</a></li>
+                <li><a href="https://www.epa.gov/careers">Jobs</a></li>
+                <li><a href="https://www.epa.gov/newsroom">Newsroom</a></li>
+                <li><a href="https://www.whitehouse.gov/open">Open Government</a></li>
+                <li><a href="http://www.regulations.gov/">Regulations.gov</a></li>
+                <li><a href="https://www.epa.gov/newsroom/email-subscriptions">Subscribe</a></li>
+                <li><a href="https://www.usa.gov/">USA.gov</a></li>
+                <li><a href="https://www.whitehouse.gov/">White House</a></li>
+              </ul>
+            </div>
+            <div class="col size-1of3">
+              <div class="col__title">Ask.</div>
+              <ul class="menu">
+                <li><a href="https://www.epa.gov/home/forms/contact-us">Contact Us</a></li>
+                <li><a href="https://www.epa.gov/home/epa-hotlines">Hotlines</a></li>
+                <li><a href="https://www.epa.gov/foia">FOIA Requests</a></li>
+                <li><a href="https://www.epa.gov/home/frequent-questions-specific-epa-programstopics">Frequent Questions</a></li>
+              </ul>
+              <div class="col__title">Follow.</div>
+              <ul class="social-menu">
+                <li><a class="menu-link social-facebook" href="https://www.facebook.com/EPA">Facebook</a></li>
+                <li><a class="menu-link social-twitter" href="https://twitter.com/epa">Twitter</a></li>
+                <li><a class="menu-link social-youtube" href="https://www.youtube.com/user/USEPAgov">YouTube</a></li>
+                <li><a class="menu-link social-flickr" href="https://www.flickr.com/photos/usepagov">Flickr</a></li>
+                <li><a class="menu-link social-instagram" href="https://instagram.com/epagov">Instagram</a></li>
+              </ul>
+              <p class="last-updated"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://www.epa.gov/sites/all/libraries/template2/jquery.js"></script>
+  <script src="https://www.epa.gov/sites/all/libraries/template2/js.js"></script>
+  <script src="https://www.epa.gov/sites/all/modules/custom/epa_core/js/alert.js"></script>
+  <!--[if lt IE 9]><script src="https://www.epa.gov/sites/all/themes/epa/js/ie.js"></script><![endif]-->
+  <!-- REMOVE if not using -->
+  <!-- {LOCAL JAVASCRIPT} -->
+</body>
+</html>

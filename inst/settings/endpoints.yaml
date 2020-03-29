@@ -1,0 +1,31 @@
+services:
+  metaData:
+    isAvailable:
+      auth: false
+    fieldsByService:
+      auth: true
+      required:
+        - service
+    issues:
+      auth: true
+  list:
+    states:
+      auth: true
+    countiesByState:
+      auth: true
+      required:
+        - state
+    sitesByCounty:
+      auth: true
+      required:
+        - state
+    cbsas:
+      auth: true
+    classes:
+      auth: true
+    parametersByClass:
+      auth: true
+    pqaos:
+      auth: true
+    mas:
+      auth: true
