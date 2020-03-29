@@ -4,7 +4,7 @@ Title: Connects to US EPA's AQS API to retrieve Air Quality Data
 Version: 0.1.1
 Author: Eric Bailey
 Maintainer: Eric Bailey <eb11307@gmail.com>
-Description: Contains an function for every endpoint exposed by EPA's AQS API. Uses
+Description: Contains a function for every endpoint exposed by EPA's AQS API. Uses
    a script to parse the documentation page and build all the functions and internal
    documentation. Stores your email and key for easier access to the data.
 License: MIT
